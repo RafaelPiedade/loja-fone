@@ -1,11 +1,7 @@
 header {
   background-color: #e24647;
-  overflow: hidden;
-}
-
-h1,
-a {
   color: #fff;
+  overflow: hidden;
 }
 h1 {
   font-size: 40px;
@@ -13,12 +9,12 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+  font-size: 21px;
+  float: right;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 a {
   text-decoration: none;
-}
-
-nav {
-  float: right;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 21px;
+  color: inherit;
 }
