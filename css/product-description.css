@@ -1,19 +1,33 @@
 .product-description {
   color: #fff;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
-.product-description > .title {
+.product-description > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-description .picture {
+    margin-top: auto;
+    width: 547px;
+    background-color: #aaa;
+}
+
+.product-description .title {
   font-size: 25px;
   margin-bottom: 100px;
   display: block;
   width: 100%;
 }
 
-.product-description > .item {
+.product-description .item {
   margin-bottom: 28px;
+  max-width: 500px;
+
 }
-.product-description > .item.-last {
+.product-description .item.-last {
     margin-bottom: 98px;
 }
 .product-description .more {
@@ -22,10 +36,10 @@
   color: inherit;
 }
 
-.product-description > .btn{
+.product-description .btn{
     display: inline-block;
 }
 
-.product-description > .btn.-second{
+.product-description .btn.-second{
     margin-left: 38px;
 }
