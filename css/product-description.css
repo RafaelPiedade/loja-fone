@@ -1,0 +1,31 @@
+.product-description {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.product-description > .title {
+  font-size: 25px;
+  margin-bottom: 100px;
+  display: block;
+  width: 100%;
+}
+
+.product-description > .item {
+  margin-bottom: 28px;
+}
+.product-description > .item.-last {
+    margin-bottom: 98px;
+}
+.product-description .more {
+  margin-bottom: 120px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-description > .btn{
+    display: inline-block;
+}
+
+.product-description > .btn.-second{
+    margin-left: 38px;
+}
