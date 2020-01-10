@@ -1,6 +1,6 @@
 .button-store {
   display: inline-block;
-  box-sizing:border-box;
+  box-sizing: border-box;
   background-color: #252c41;
   font-size: 20px;
   color: #fff;
@@ -10,7 +10,14 @@
   line-height: 60px;
   text-align: center;
   text-decoration: none;
-  border:none;
+  border: none;
+  transition: all 0.5s linear;
+}
+.button-store:hover,
+.button-store:focus {
+  cursor: pointer;
+  color: #252c41;
+  background-color: #ddd;
 }
 
 .button-store.-second {
@@ -21,10 +28,17 @@
   margin-right: 38px;
 }
 
+.button-store.-second:hover,
+.button-store.-second:focus {
+  cursor: pointer;
+  color: #e24647;
+  background-color: #ddd;
+}
+
 .button-store > button,
-.button-store > a{
+.button-store > a {
   font-size: inherit;
-  background-color:inherit;
+  background-color: inherit;
   border: none;
   color: inherit;
   text-decoration: inherit;

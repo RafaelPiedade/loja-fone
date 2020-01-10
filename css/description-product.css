@@ -8,8 +8,13 @@
   margin-bottom: 50px;
 }
 
+.description-product .favorite {
+  position: absolute;
+  top: 9px;
+  transform: translateX(calc(-100% - 47px));
+}
 
-.description-product .star{
+.description-product .star {
   margin-right: 9px;
 }
 
@@ -18,14 +23,18 @@
   margin-bottom: 28px;
 }
 
-.description-product > .item.-star{
+.description-product > .item.-star {
   margin-bottom: 10px;
 }
 
+.description-product > .item.-star:hover {
+  cursor: pointer;
+}
 /* Pega o item que estiver abaixo/ irmão diretamente abaixo */
-.description-product > .item.-star + .item{
+.description-product > .item.-star + .item {
   margin-left: 7px;
 }
+
 .description-product > .item.-info {
   width: 200px;
   text-align: right;
