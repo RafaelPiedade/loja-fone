@@ -10,6 +10,22 @@
   float: left;
   text-transform: uppercase;
 }
+
+.header-store > .search {
+  position: absolute;
+  right: 50%;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-size: 20px;
+  width: 295px;
+}
+
+.header-store > .search::placeholder{
+  color: #fff
+}
+
 .header-store > .navigation {
   font-family: "Segoe UI", "Roboto", sans-serif;
   font-size: 21px;
