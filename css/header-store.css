@@ -34,12 +34,29 @@
 .header-store [type="search"]::placeholder {
   color: #fff;
 }
+.header-store .item{
+  display: inline-block;
+  position: relative;
+}
 
 .header-store .action {
   color: inherit;
   text-decoration: none;
   margin-right: 60px;
 }
+
 .header-store .action.-last {
   margin-right: 0;
+}
+
+.header-store .line{
+  position: absolute;
+  height: 1px;
+  background-color: #fff;
+  width: 0%;
+  transition: width 1s linear;
+}
+
+.header-store .action:hover + .line{
+  width: 100%;
 }
