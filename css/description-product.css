@@ -8,10 +8,6 @@
   margin-bottom: 50px;
 }
 
-.description-product > .stars{
-  margin-bottom: 25px;
-  height: 25px;
-}
 
 .description-product .star{
   margin-right: 9px;
@@ -22,6 +18,14 @@
   margin-bottom: 28px;
 }
 
+.description-product > .item.-star{
+  margin-bottom: 10px;
+}
+
+/* Pega o item que estiver abaixo/ irmão diretamente abaixo */
+.description-product > .item.-star + .item{
+  margin-left: 7px;
+}
 .description-product > .item.-info {
   width: 200px;
   text-align: right;
@@ -41,7 +45,7 @@
   margin-bottom: 30px;
 }
 
-.description-product > .text.-last {
+.description-product > .text.-more {
   margin-bottom: 0;
 }
 

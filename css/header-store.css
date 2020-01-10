@@ -10,27 +10,29 @@
   float: left;
   text-transform: uppercase;
 }
-
-.header-store > .search {
-  position: absolute;
-  right: 50%;
-  color: inherit;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #fff;
-  font-size: 20px;
-  width: 295px;
-}
-
-.header-store > .search::placeholder{
-  color: #fff
-}
-
 .header-store > .navigation {
   font-family: "Segoe UI", "Roboto", sans-serif;
   font-size: 21px;
   float: right;
 }
+
+/* ou .header-store [type="search"] */
+.header-store input[type="search"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: inherit;
+  font-family: Arial, "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  width: 358px;
+  margin-right: 65px;
+}
+
+.header-store [type="search"]::placeholder {
+  color: #fff;
+}
+
 .header-store .action {
   color: inherit;
   text-decoration: none;
