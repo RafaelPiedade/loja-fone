@@ -13,29 +13,25 @@
   margin-bottom: 28px;
 }
 
-.description-product > .item.-star {
-  margin-bottom: 10px;
-}
 .description-product > .item.-heart {
-  cursor: pointer;
   position: absolute;
   top: 9px;
   transform: translateX(-100%);
   left: -47px;
-  transition: transform 0.4s linear;
-}
-
-.description-product > .item.-heart:hover{
-  transform: scale(1.3) translateX(-75%);
-}
-
-.description-product > .item.-star img {
-  margin-right: 5px;
   cursor: pointer;
-  transition: transform 0.2s linear;
 }
-.description-product > .item.-star img:hover{
-  transform: scale(1.3)
+
+.description-product > .item.-star {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.description-product .icon{
+  transition: transform 100ms linear;
+}
+
+.description-product .icon:hover {
+  transform: scale(1.2);
 }
 
 /* Pega o item que estiver abaixo/ irmão diretamente abaixo */

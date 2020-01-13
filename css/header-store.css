@@ -29,34 +29,37 @@
   padding: 8px;
   width: 358px;
   margin-right: 65px;
-}
-
-.header-store [type="search"]::placeholder {
-  color: #fff;
-}
-.header-store .item{
-  display: inline-block;
-  position: relative;
+  vertical-align: bottom;
 }
 
 .header-store .action {
-  color: inherit;
+  display: inline-block;
   text-decoration: none;
+  color: inherit;
   margin-right: 60px;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .header-store .action.-last {
   margin-right: 0;
 }
 
-.header-store .line{
-  position: absolute;
+.header-store .action::after {
+  content: "";
   height: 1px;
+  width: 100%;
   background-color: #fff;
-  width: 0%;
-  transition: width 1s linear;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: transform 200ms linear;
+  transform-origin: center left;
 }
 
-.header-store .action:hover + .line{
-  width: 100%;
+.header-store .action:hover::after{
+  opacity: 1;
+  transform: scaleX(1);
 }
