@@ -66,3 +66,26 @@
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 1275px) {
+  .description-product{
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 805px) {
+  .description-product > .item.-heart{
+    right: 0;
+    left: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .description-product{
+    width: 100%;
+    word-wrap: break-word;
+  }
+}

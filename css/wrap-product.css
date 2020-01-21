@@ -11,3 +11,12 @@
   transform: translateY(calc(100% + 98px));
   /* margin-top: 90px; */
 }
+
+@media (max-width: 1275px) {
+  .wrap-product{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
