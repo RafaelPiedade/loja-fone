@@ -77,7 +77,14 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1310px) {
+  .header-store {
+    padding-left: 60px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 955px) {
   .header-store {
     padding-left: 30px;
   }
@@ -98,9 +105,10 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 370px) {
   .header-store {
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .header-store .action {
@@ -108,8 +116,8 @@
   }
 }
 
-@media (max-width:340px){
-  .header-store > .navigation{
+@media (max-width: 335px) {
+  .header-store > .navigation {
     display: none;
   }
 }

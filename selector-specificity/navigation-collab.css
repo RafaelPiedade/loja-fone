@@ -1,0 +1,11 @@
+nav.navigation-collab{/* 1 + 10 = 11 */
+    color:red;
+}
+
+.navigation-collab .action{
+    color: inherit;
+}
+
+.navigation-collab{ /* 10 */
+    color:blue;
+}
