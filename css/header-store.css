@@ -32,6 +32,10 @@
   vertical-align: bottom;
 }
 
+.header-store input[type="search"]::placeholder{
+  color: inherit;
+}
+
 .header-store .action {
   display: inline-block;
   text-decoration: none;
@@ -73,7 +77,7 @@
 
 @media (max-width: 1235px) {
   .header-store {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
   .header-store > .title {
@@ -91,7 +95,6 @@
 @media (max-width: 955px) {
   .header-store {
     padding-left: 30px;
-    margin-bottom: 70px;
   }
   .header-store [type="search"] {
     display: none;
