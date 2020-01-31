@@ -19,7 +19,7 @@
 }
 
 /* ou .header-store [type="search"] */
-.header-store input[type="search"] {
+.header-store [type="search"] {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -96,8 +96,13 @@
   .header-store {
     padding-left: 30px;
   }
+
   .header-store [type="search"] {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
   }
 }
 
