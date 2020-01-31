@@ -19,12 +19,15 @@
   transform: translateX(-100%);
   left: -47px;
   cursor: pointer;
+  width: 33px;
+  height: 29px;
 }
 
-.description-product > .item.-active,
-.description-product > .item .-active{
+/* .description-product > .item .-active{
   background-color: #fff;
-} 
+}  */
+
+
 
 .description-product > .item.-star {
   cursor: pointer;
@@ -37,6 +40,25 @@
 
 .description-product .icon:hover {
   transform: scale(1.2);
+}
+
+.description-product  .icon.-active{
+  display:none;
+}
+
+.description-product > .item.-active .icon,
+.description-product .star.-active > .icon{
+  display: none;
+}
+
+.description-product > .item.-active .icon.-active,
+.description-product .star.-active > .-active{
+  display: block;
+}
+
+
+.description-product .star {
+  display: inline-block;
 }
 
 /* Pega o item que estiver abaixo/ irmão diretamente abaixo */

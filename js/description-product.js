@@ -1,17 +1,15 @@
 const $heart = window.document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".star");
 
 $heart.addEventListener("click", handleClick);
 
+$stars.forEach($star => {
+  $star.addEventListener("click", handleClick);
+});
+
 function handleClick() {
-  /* if ($heart.classList.contains("-active")) {
-    $heart.classList.remove("-active");
-  } else {
-    $heart.classList.add("-active");
-  } */
-
-  $heart.classList.toggle("-active");
+  this.classList.toggle("-active");
 }
-
 
 /* document.querySelector(".-star").addEventListener("moeover", () => {
   console.log($stars);
@@ -20,11 +18,12 @@ function handleClick() {
 // pegar estrelas
 // mudar cor ao click na estrela
 
-const $stars = window.document.querySelectorAll(".-star .icon");
+/* const $stars = document.querySelectorAll(".star");
 for (let i = 0; i < $stars.length; i++) {
-  $stars[i].addEventListener("click", () => changeStars(i) );
+  $stars[i].addEventListener("click", () => {
+    changeStars(i)
+  } );
 }
-
 function changeStars(number) {
   for (let i = 0; i < $stars.length; i++) {
     const element = $stars[i];
@@ -34,4 +33,13 @@ function changeStars(number) {
       element.classList.remove('-active')
     }
   }
-} 
+}  */
+
+/* 
+$stars[0].addEventListener("click", handleClickStar);
+
+function handleClickStar() {
+  this.classList.toggle("-active");
+  console.log(this)
+}
+ */
