@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/container-store.css" />
     <link rel="stylesheet" href="css/header-store.css" />
+    <link rel="stylesheet" href="css/input-search.css" />
     <link rel="stylesheet" href="css/photo-product.css" />
     <link rel="stylesheet" href="css/wrap-product.css" />
     <link rel="stylesheet" href="css/description-product.css" />
@@ -21,11 +22,11 @@
       <header class="header-store">
         <h1 class="title">Logo</h1>
         <nav class="navigation">
-          <div class="search">
-            <input type="search" placeholder="Busca" />
-            <img class="icon" src="img/search.png"/>
-            <img class="icon -active" src="img/close.png" />
-          </div>
+          <form class="input-search">
+            <input type="search" class="content" placeholder="Busca" /><!-- 
+             --><input type="image" class="icon" src="img/search.svg" /><!-- 
+             --><input type="image" class="icon -active" src="img/close.svg" />
+          </form>
           <a class="action" href="#">Produtos</a>
           <a class="action" href="#">Serviços</a>
           <a class="action -last car" href="#">Carrinho (0)</a>
@@ -119,6 +120,7 @@
 
     <script src="js/home.js"></script>
     <script src="js/header-store.js"></script>
+    <script src="js/input-search.js"></script>
     <script src="js/description-product.js"></script>
   </body>
 </html>
