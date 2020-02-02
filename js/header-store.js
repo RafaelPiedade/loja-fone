@@ -1,6 +1,8 @@
-const $search = document.querySelector("[type=search]");
-console.log($search)
-$search.addEventListener('click',()=>{
-    console.log(this)
-    $search.classList.toggle('-active')
-})
+const $search = document.querySelector(".search");
+const $icons = document.querySelectorAll(".header-store .icon");
+
+$icons.forEach($icon => {
+  $icon.addEventListener("click", () => {
+    $search.classList.toggle("-active");
+  });
+});
